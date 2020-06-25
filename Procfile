@@ -1,1 +1,1 @@
-discordbot: python timeherobot.py
+discordbot: python3 timeherobot.py
