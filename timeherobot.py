@@ -13,7 +13,7 @@ client = discord.Client()
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '6:36':
+    if now == '6:40':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('/poll "今日の夜は？" "いつでも良いよ" "やる事終れば" "今日は無理だ"')
 
