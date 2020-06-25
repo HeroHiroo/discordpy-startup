@@ -3,7 +3,7 @@ import discord
 from discord.ext import tasks
 from datetime import datetime
 
-TOKEN = "NzI1NDQxNTg5NTY4MDc3ODQ1.XvOy4A.HCk43ngzou71U8rtpD6BoGcGsMI" #トークン
+TOKEN = "NzI1ODEwMTQ1ODgzNDU1NTA4.XvUKXQ.SNgrwiNKeGrbSXqiHXcTx3EMtDY" #トークン
 CHANNEL_ID = 723804560950296596 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
@@ -13,7 +13,7 @@ client = discord.Client()
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '19:30':
+    if now == '20:00':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('/poll "今日の夜は？" "いつでも良いよ" "やる事終れば" "今日は無理だ"')
 
